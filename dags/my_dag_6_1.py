@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.operators.bash import BushOperator, PythonOperator
+from airflow.operators.bash import BashOperator, PythonOperator
 from datatime import datatime
 
 def gen():
