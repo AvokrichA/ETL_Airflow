@@ -10,3 +10,4 @@ gen_bash = BashOperator(
     bash_command = 'echo $RANDOM'; exit 99;,
     dag=dag,
 )
+gen_bash
