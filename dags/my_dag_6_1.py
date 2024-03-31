@@ -7,7 +7,7 @@ dag =  DAG('my_dag_6_1', start_date=datatime(2023,1,1), schedule_interval='0 12 
 
 gen_bash = BashOperator(
     task_id= gen_bash, 
-    bash_command = echo $RANDOM; exit 99;,
+    bash_command = echo $RANDOM; exit 99,
     dag=dag,
 )
 gen_bash
