@@ -55,7 +55,7 @@ def get_data():
 	conn = postgres_hook.get_conn()
 	cur = conn.cursor()
 	with open(data_path, "r") as file:
-	cur.copy_expert(
+		cur.copy_expert(
 	"COPY employees_temp FROM STDIN WITH CSV HEADER DELIMITER AS ',' QUOTE '\"'",
 	file,
 	)
