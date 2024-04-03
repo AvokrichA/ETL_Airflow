@@ -10,7 +10,7 @@ dag =  DAG('my_dag_6_1',
            catchup=False)
 
 gen_bash = BashOperator(
-    task_id= gen_bash, 
+    task_id= 'gen_bash', 
     bash_command = 'echo $RANDOM',
     dag=dag,
 )
