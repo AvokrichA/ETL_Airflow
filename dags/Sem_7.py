@@ -50,7 +50,7 @@ def get_data():
 	url = "https://raw.githubusercontent.com/apache/airflow/main/docs/apache-airflow/tutorial/pipeline_example.csv"
 	response = requests.request("GET", url)
 	with open(data_path, "w") as file:
-	file.write(response.text)
+	    file.write(response.text)
 	postgres_hook = PostgresHook(postgres_conn_id="pg_conn")
 	conn = postgres_hook.get_conn()
 	cur = conn.cursor()
