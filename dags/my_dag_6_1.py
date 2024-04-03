@@ -2,7 +2,7 @@ import pendulum
 
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datatime import datatime
+from datetime import datetime
 
 dag =  DAG('my_dag_6_1',
            schedule_interval=None, 
